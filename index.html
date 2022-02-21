@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bap Er Bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-purple-500 text-5xl text-center my-8">
+        Welcome to My<span class="font-bold text-purple-700">
+          Bap er Bank!!!</span
+        >
+      </h1>
+    </header>
+    <main>
+      <h3 class="text-center my-6 font-bold text-3xl text-purple-500">
+        Please Login
+      </h3>
+      <form action="" class="text-center bg-purple-200 p-12 w-3/4 mx-auto">
+        <div class="mb-6">
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/4 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-auto"
+            placeholder="name@flowbite.com"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="password"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-2/4 mx-auto"
+            required
+          />
+        </div>
+        <br />
+        <a
+          href="#_"
+          class="relative px-5 py-2 font-medium text-white group"
+          id="login-btn"
+        >
+          <span
+            class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"
+          ></span>
+          <span
+            class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"
+          ></span>
+
+          <span
+            class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"
+          ></span>
+          <span
+            class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"
+          ></span>
+          <span class="relative">Enter</span>
+        </a>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

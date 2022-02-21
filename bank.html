@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Banking System</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-purple-500 text-5xl text-center my-8">
+        Let's Get Some<span class="font-bold text-purple-700"> Money!!!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="my-8 text-white">
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-blue-300 p-8 rounded">
+            <h3 class="text-2xl">Deposite</h3>
+            <h4 class="text-4xl">$<span id="total-deposite">00</span></h4>
+          </div>
+          <div class="bg-red-300 p-8 rounded">
+            <h3 class="text-2xl">Withdraw</h3>
+            <h4 class="text-4xl">$<span id="total-withdraw">00</span></h4>
+          </div>
+          <div class="bg-orange-300 p-8 rounded">
+            <h3 class="text-2xl">Balance</h3>
+            <h4 class="text-4xl">$<span id="total-balance">1200</span></h4>
+          </div>
+        </div>
+      </section>
+      <!-- deposite and withdraw  -->
+      <section class="">
+        <div class="grid md:grid-cols-2 text-center text-white gap-4 mt-16">
+          <div class="bg-green-300 p-8 rounded">
+            <h3 class="text-2xl">Please Deposite</h3>
+            <input
+              type="text"
+              id="last-deposite"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/4 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-auto mt-4 mb-6"
+              placeholder="Deposite"
+            />
+            <button
+              type="button"
+              class="text-white bg-gradient-to-br from-cyan-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              id="deposite-btn"
+            >
+              Deposite
+            </button>
+          </div>
+          <div class="bg-purple-400 p-8 rounded">
+            <h3 class="text-2xl">Please Withdraw</h3>
+            <input
+              type="text"
+              id="last-withdraw"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-2/4 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mx-auto mt-4 mb-6"
+              placeholder="Withdraw"
+            />
+            <button
+              type="button"
+              class="text-white bg-gradient-to-br from-cyan-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              id="withdraw-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="bank.js"></script>
+  </body>
+</html>
